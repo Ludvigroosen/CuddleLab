@@ -71,7 +71,7 @@ nodes:
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/45eb55213066865e8909f818c2ea94d4add60939f7fa055c5b1b31b7e753a897
-    controlPlane: true
+    controlPlane: false
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "9a:a4:c4:c5:9a:81"
@@ -82,8 +82,6 @@ nodes:
           - network: "0.0.0.0/0"
             gateway: "10.140.11.1"
         mtu: 1500
-        vip:
-          ip: "10.140.11.3"
   - hostname: "kuberock02"
     ipAddress: "10.140.11.20"
     installDiskSelector:
@@ -156,6 +154,26 @@ nodes:
           - network: "0.0.0.0/0"
             gateway: "10.140.11.1"
         mtu: 1500
+  - hostname: "kubefruit01"
+    ipAddress: "10.140.11.24"
+    installDiskSelector:
+      serial: "2024011700302"
+    machineSpec:
+      secureboot: false
+    talosImageURL: factory.talos.dev/installer/195c29e594422e054a107742fc6cb4390c756dd713a8ae8674f03381b5b62def
+    controlPlane: true
+    networkInterfaces:
+      - deviceSelector:
+          hardwareAddr: "10:dd:b1:bc:1d:12"
+        dhcp: false
+        addresses:
+          - "10.140.11.24/24"
+        routes:
+          - network: "0.0.0.0/0"
+            gateway: "10.140.11.1"
+        mtu: 1500
+        vip:
+          ip: "10.140.11.3"
 
 # Global patches
 patches:
