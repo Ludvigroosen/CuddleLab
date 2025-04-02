@@ -164,25 +164,6 @@ nodes:
         mtu: 1500
         vip:
           ip: "10.140.11.3"
-  - hostname: "kubefruit01"
-    ipAddress: "10.140.11.24"
-    installDisk: "/dev/sdb"
-    machineSpec:
-      secureboot: false
-    talosImageURL: factory.talos.dev/installer/2b8d64d427acbc5428b806997919bbd3ac3522ea18716143e956ab07510f9254
-    controlPlane: true
-    networkInterfaces:
-      - deviceSelector:
-          hardwareAddr: "10:dd:b1:bc:1d:12"
-        dhcp: false
-        addresses:
-          - "10.140.11.24/24"
-        routes:
-          - network: "0.0.0.0/0"
-            gateway: "10.140.11.1"
-        mtu: 1500
-        vip:
-          ip: "10.140.11.3"
 
 # Global patches
 patches:
