@@ -1,0 +1,65 @@
+---
+nodes: []
+   - name: "SEMA-KubeVM01"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
+     address: "10.140.11.15"         # (REQUIRED) IP address of the node (must be in the node_cidr)
+     controller: true    # (REQUIRED) Set to true if this is a controller node
+     disk: "sda"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
+     mac_addr: "00:50:56:96:db:37"        # (REQUIRED) MAC address of the NIC for this node (talosctl get links -n <ip> --insecure)
+     schematic_id: "8d112eda965577f16349ed6074d0bfa947d14090eda1a05610359e34f9ff8cd1"    # (REQUIRED) Schematic ID from https://factory.talos.dev/
+  #   mtu: 1500           # (ADVANCED/OPTIONAL) MTU for the NIC. DEFAULT: 1500
+  #   secureboot: false   # (ADVANCED/OPTIONAL) SecureBoot mode on UEFI platforms. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+  #   encrypt_disk: false # (ADVANCED/OPTIONAL) TPM-based disk encryption. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+   - name: "SEMA-KubeVM02"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
+     address: "10.140.11.16"         # (REQUIRED) IP address of the node (must be in the node_cidr)
+     controller: true    # (REQUIRED) Set to true if this is a controller node
+     disk: "sda"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
+     mac_addr: "00:50:56:96:7a:1d"        # (REQUIRED) MAC address of the NIC for this node (talosctl get links -n <ip> --insecure)
+     schematic_id: "8345b4069aebd2ce49ced9d4eafeb55a0052e7e30b8906541ed5a4a54c978e0f"    # (REQUIRED) Schematic ID from https://factory.talos.dev/
+  #   mtu: 1500           # (ADVANCED/OPTIONAL) MTU for the NIC. DEFAULT: 1500
+  #   secureboot: false   # (ADVANCED/OPTIONAL) SecureBoot mode on UEFI platforms. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+  #   encrypt_disk: false # (ADVANCED/OPTIONAL) TPM-based disk encryption. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+   - name: "KubeRock01"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
+     address: "10.140.11.19"         # (REQUIRED) IP address of the node (must be in the node_cidr)
+     controller: true    # (REQUIRED) Set to true if this is a controller node
+     disk: "mmcblk1"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
+     mac_addr: "9a:a4:c4:c5:9a:81"        # (REQUIRED) MAC address of the NIC for this node (talosctl get links -n <ip> --insecure)
+     schematic_id: "45eb55213066865e8909f818c2ea94d4add60939f7fa055c5b1b31b7e753a897"    # (REQUIRED) Schematic ID from https://factory.talos.dev/
+  #   mtu: 1500           # (ADVANCED/OPTIONAL) MTU for the NIC. DEFAULT: 1500
+  #   secureboot: false   # (ADVANCED/OPTIONAL) SecureBoot mode on UEFI platforms. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+  #   encrypt_disk: false # (ADVANCED/OPTIONAL) TPM-based disk encryption. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+   - name: "KubeRock02"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
+     address: "10.140.11.20"         # (REQUIRED) IP address of the node (must be in the node_cidr)
+     controller: true    # (REQUIRED) Set to true if this is a controller node
+     disk: "mmcblk1"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
+     mac_addr: ""        # (REQUIRED) MAC address of the NIC for this node (talosctl get links -n <ip> --insecure)
+     schematic_id: "6a492798e5c0b383640ab0a289b8322a02903fdd259361e592c76efe2808b067"    # (REQUIRED) Schematic ID from https://factory.talos.dev/
+  #   mtu: 1500           # (ADVANCED/OPTIONAL) MTU for the NIC. DEFAULT: 1500
+  #   secureboot: false   # (ADVANCED/OPTIONAL) SecureBoot mode on UEFI platforms. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+  #   encrypt_disk: false # (ADVANCED/OPTIONAL) TPM-based disk encryption. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+   - name: "KubeRock03"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
+     address: "10.140.11.21"         # (REQUIRED) IP address of the node (must be in the node_cidr)
+     controller: true    # (REQUIRED) Set to true if this is a controller node
+     disk: "mmcblk1"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
+     mac_addr: ""        # (REQUIRED) MAC address of the NIC for this node (talosctl get links -n <ip> --insecure)
+     schematic_id: "72b4efabc6a8d7044a08b37b70bf3cf7cc9fb9c93e7b68cfc010f36e9c798386"    # (REQUIRED) Schematic ID from https://factory.talos.dev/
+  #   mtu: 1500           # (ADVANCED/OPTIONAL) MTU for the NIC. DEFAULT: 1500
+  #   secureboot: false   # (ADVANCED/OPTIONAL) SecureBoot mode on UEFI platforms. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+  #   encrypt_disk: false # (ADVANCED/OPTIONAL) TPM-based disk encryption. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+   - name: "KubeRock04"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
+     address: "10.140.11.22"         # (REQUIRED) IP address of the node (must be in the node_cidr)
+     controller: true    # (REQUIRED) Set to true if this is a controller node
+     disk: "mmcblk1"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
+     mac_addr: ""        # (REQUIRED) MAC address of the NIC for this node (talosctl get links -n <ip> --insecure)
+     schematic_id: "bd300c29d15f01a3857f6e5811de13c3d0c1dd01ad462ba7c87b594c37fa0cc4"    # (REQUIRED) Schematic ID from https://factory.talos.dev/
+  #   mtu: 1500           # (ADVANCED/OPTIONAL) MTU for the NIC. DEFAULT: 1500
+  #   secureboot: false   # (ADVANCED/OPTIONAL) SecureBoot mode on UEFI platforms. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+  #   encrypt_disk: false # (ADVANCED/OPTIONAL) TPM-based disk encryption. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+   - name: "KubeRock05"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
+     address: "10.140.11.23"         # (REQUIRED) IP address of the node (must be in the node_cidr)
+     controller: true    # (REQUIRED) Set to true if this is a controller node
+     disk: "mmcblk1"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
+     mac_addr: ""        # (REQUIRED) MAC address of the NIC for this node (talosctl get links -n <ip> --insecure)
+     schematic_id: "9d55301246fd8a58969f61cca06764f0953d452d9a580278f501747dcd925dc5"    # (REQUIRED) Schematic ID from https://factory.talos.dev/
+  #   mtu: 1500           # (ADVANCED/OPTIONAL) MTU for the NIC. DEFAULT: 1500
+  #   secureboot: false   # (ADVANCED/OPTIONAL) SecureBoot mode on UEFI platforms. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
+  #   encrypt_disk: false # (ADVANCED/OPTIONAL) TPM-based disk encryption. Ref: https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/secureboot
