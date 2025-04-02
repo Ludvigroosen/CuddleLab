@@ -30,7 +30,7 @@ nodes:
       serial: "sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/8d112eda965577f16349ed6074d0bfa947d14090eda1a05610359e34f9ff8cd1
+    talosImageURL: factory.talos.dev/installer/00f22540ad44226f1298896c5d91beecc3f46238d6f0221d2847e993cb90b493
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -50,7 +50,7 @@ nodes:
       serial: "sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/8345b4069aebd2ce49ced9d4eafeb55a0052e7e30b8906541ed5a4a54c978e0f
+    talosImageURL: factory.talos.dev/installer/4b233b79f08a9f2d86020746c79042870b991e3579863e2837342b0684f818b0
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -67,7 +67,7 @@ nodes:
   - hostname: "kuberock01"
     ipAddress: "10.140.11.19"
     installDiskSelector:
-      serial: "mmcblk1"
+      serial: "sda"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/45eb55213066865e8909f818c2ea94d4add60939f7fa055c5b1b31b7e753a897
@@ -87,7 +87,7 @@ nodes:
   - hostname: "kuberock02"
     ipAddress: "10.140.11.20"
     installDiskSelector:
-      serial: "mmcblk1"
+      serial: "sda"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/6a492798e5c0b383640ab0a289b8322a02903fdd259361e592c76efe2808b067
@@ -107,7 +107,7 @@ nodes:
   - hostname: "kuberock03"
     ipAddress: "10.140.11.21"
     installDiskSelector:
-      serial: "mmcblk1"
+      serial: "sda"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/72b4efabc6a8d7044a08b37b70bf3cf7cc9fb9c93e7b68cfc010f36e9c798386
@@ -127,7 +127,7 @@ nodes:
   - hostname: "kuberock04"
     ipAddress: "10.140.11.22"
     installDiskSelector:
-      serial: "mmcblk1"
+      serial: "sda"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/bd300c29d15f01a3857f6e5811de13c3d0c1dd01ad462ba7c87b594c37fa0cc4
@@ -147,7 +147,7 @@ nodes:
   - hostname: "kuberock05"
     ipAddress: "10.140.11.23"
     installDiskSelector:
-      serial: "mmcblk1"
+      serial: "sda"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/9d55301246fd8a58969f61cca06764f0953d452d9a580278f501747dcd925dc5
