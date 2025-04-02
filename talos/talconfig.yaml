@@ -91,7 +91,7 @@ nodes:
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/6a492798e5c0b383640ab0a289b8322a02903fdd259361e592c76efe2808b067
-    controlPlane: true
+    controlPlane: false
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "7a:22:83:39:1f:85"
@@ -102,8 +102,6 @@ nodes:
           - network: "0.0.0.0/0"
             gateway: "10.140.11.1"
         mtu: 1500
-        vip:
-          ip: "10.140.11.3"
   - hostname: "kuberock03"
     ipAddress: "10.140.11.21"
     installDiskSelector:
@@ -111,7 +109,7 @@ nodes:
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/72b4efabc6a8d7044a08b37b70bf3cf7cc9fb9c93e7b68cfc010f36e9c798386
-    controlPlane: true
+    controlPlane: false
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "aa:64:9c:a0:22:17"
@@ -122,8 +120,6 @@ nodes:
           - network: "0.0.0.0/0"
             gateway: "10.140.11.1"
         mtu: 1500
-        vip:
-          ip: "10.140.11.3"
   - hostname: "kuberock04"
     ipAddress: "10.140.11.22"
     installDiskSelector:
@@ -131,7 +127,7 @@ nodes:
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/bd300c29d15f01a3857f6e5811de13c3d0c1dd01ad462ba7c87b594c37fa0cc4
-    controlPlane: true
+    controlPlane: false
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "ba:f9:dd:e4:32:35"
@@ -142,8 +138,6 @@ nodes:
           - network: "0.0.0.0/0"
             gateway: "10.140.11.1"
         mtu: 1500
-        vip:
-          ip: "10.140.11.3"
   - hostname: "kuberock05"
     ipAddress: "10.140.11.23"
     installDiskSelector:
@@ -151,7 +145,7 @@ nodes:
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/9d55301246fd8a58969f61cca06764f0953d452d9a580278f501747dcd925dc5
-    controlPlane: true
+    controlPlane: false
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "0e:45:c7:5c:7a:ce"
@@ -162,8 +156,6 @@ nodes:
           - network: "0.0.0.0/0"
             gateway: "10.140.11.1"
         mtu: 1500
-        vip:
-          ip: "10.140.11.3"
 
 # Global patches
 patches:
