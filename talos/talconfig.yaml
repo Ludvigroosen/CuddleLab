@@ -67,7 +67,7 @@ nodes:
   - hostname: "kuberock01"
     ipAddress: "10.140.11.19"
     installDiskSelector:
-      serial: "0x40c2b692"
+      serial: "0x40882fa2"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/45eb55213066865e8909f818c2ea94d4add60939f7fa055c5b1b31b7e753a897
@@ -87,7 +87,7 @@ nodes:
   - hostname: "kuberock02"
     ipAddress: "10.140.11.20"
     installDiskSelector:
-      serial: "0x40c2a503"
+      serial: "0x4100ae36"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/6a492798e5c0b383640ab0a289b8322a02903fdd259361e592c76efe2808b067
@@ -107,7 +107,7 @@ nodes:
   - hostname: "kuberock03"
     ipAddress: "10.140.11.21"
     installDiskSelector:
-      serial: "0x40882fa2"
+      serial: "0x446fa26e"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/72b4efabc6a8d7044a08b37b70bf3cf7cc9fb9c93e7b68cfc010f36e9c798386
@@ -127,7 +127,7 @@ nodes:
   - hostname: "kuberock04"
     ipAddress: "10.140.11.22"
     installDiskSelector:
-      serial: "0x4100ae36"
+      serial: "0x40c2b692"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/bd300c29d15f01a3857f6e5811de13c3d0c1dd01ad462ba7c87b594c37fa0cc4
@@ -147,7 +147,7 @@ nodes:
   - hostname: "kuberock05"
     ipAddress: "10.140.11.23"
     installDiskSelector:
-      serial: "0x446fa26e"
+      serial: "0x40c2a503"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/9d55301246fd8a58969f61cca06764f0953d452d9a580278f501747dcd925dc5
