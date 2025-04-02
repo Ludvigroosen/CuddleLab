@@ -157,7 +157,7 @@ nodes:
   - hostname: "kubefruit01"
     ipAddress: "10.140.11.24"
     installDiskSelector:
-      serial: "2024011700302"
+      serial: "sdb"
     machineSpec:
       secureboot: false
     talosImageURL: factory.talos.dev/installer/195c29e594422e054a107742fc6cb4390c756dd713a8ae8674f03381b5b62def
